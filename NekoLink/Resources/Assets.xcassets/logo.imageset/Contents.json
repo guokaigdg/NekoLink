@@ -1,0 +1,12 @@
+{
+  "images" : [
+    {
+      "filename" : "neko-link-logo.jpeg",
+      "idiom" : "mac"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

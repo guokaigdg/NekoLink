@@ -1,0 +1,99 @@
+name: NekoLink
+packages:
+  Yams:
+    url: https://github.com/jpsim/Yams.git
+    from: 5.1.3
+  Sparkle:
+    url: https://github.com/sparkle-project/Sparkle.git
+    from: 2.6.0
+options:
+  bundleIdPrefix: app.nekolink
+  deploymentTarget:
+    macOS: "14.0"
+  createIntermediateGroups: true
+  groupSortPosition: top
+  generateEmptyDirectories: true
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: complete
+    DEVELOPMENT_TEAM: ""
+    CODE_SIGN_STYLE: Automatic
+    ENABLE_HARDENED_RUNTIME: YES
+    MACOSX_DEPLOYMENT_TARGET: "14.0"
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+
+targets:
+  NekoLink:
+    type: application
+    platform: macOS
+    dependencies:
+      - package: Yams
+      - package: Sparkle
+      - sdk: NetworkExtension.framework
+      - target: NekoLinkHelper
+        embed: false
+        copy:
+          destination: resources
+      - target: NekoLinkTunnel
+        embed: true
+    sources:
+      - path: NekoLink
+        excludes:
+          - "Resources/config.yaml"
+      - path: Shared
+      - path: NekoLinkHelper/Helper.plist
+        buildPhase: resources
+    resources:
+      - path: NekoLink/Resources
+        optional: true
+    info:
+      path: NekoLink/Info.plist
+      properties:
+        LSUIElement: false
+        CFBundleDisplayName: NekoLink
+        NSHumanReadableCopyright: "Copyright © 2026"
+    entitlements:
+      path: NekoLink/NekoLink.entitlements
+      properties:
+        com.apple.security.app-sandbox: false
+        com.apple.security.network.client: true
+        com.apple.security.network.server: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.nekolink.NekoLink
+        PRODUCT_NAME: NekoLink
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        GENERATE_INFOPLIST_FILE: NO
+        COMBINE_HIDPI_IMAGES: YES
+
+  NekoLinkTunnel:
+    type: extension
+    platform: macOS
+    sources:
+      - path: NekoLinkTunnel
+    info:
+      path: NekoLinkTunnel/Info.plist
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.nekolink.NekoLink.tunnel
+        PRODUCT_NAME: NekoLinkTunnel
+        GENERATE_INFOPLIST_FILE: NO
+        GENERATE_PKGINFO_FILE: NO
+        SWIFT_ACTIVE_COMPILATION_CONDITIONS: $(inherited)
+        CODE_SIGN_ENTITLEMENTS: NekoLink/NekoLink.entitlements
+
+  NekoLinkHelper:
+    type: tool
+    platform: macOS
+    sources:
+      - path: NekoLinkHelper
+        excludes:
+          - "Helper.plist"
+      - path: Shared
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: app.nekolink.NekoLink.helper
+        PRODUCT_NAME: NekoLinkHelper

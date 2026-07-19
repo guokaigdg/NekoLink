@@ -1,0 +1,767 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CD34EF56AB78901234567890ABCDEF12 /* TunnelManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB12CD34EF5678901234567890ABCDEF /* TunnelManager.swift */; };
+		DEADBEEF1234567890ABCDEF12345678 /* MenuBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEDCBA9876543210FEDCBA9876543210 /* MenuBarManager.swift */; };
+		0B25702253608B5F57BFC6F1 /* SubscriptionsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 431A4720DBC9B89735F58171 /* SubscriptionsWindow.swift */; };
+		0B6CBA7AB6FAFB5FFAC48830 /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683727808B5F7183F88765A8 /* HelperProtocol.swift */; };
+		0CE4DBA31363C881BD62E17E /* HelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 683727808B5F7183F88765A8 /* HelperProtocol.swift */; };
+		1CC9196609E8C1E2276CE9E1 /* TrafficMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEBC3829570E6AFDBBADFAB4 /* TrafficMonitor.swift */; };
+		230F872AA8CFA786764165C4 /* LogsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8B760A7E38F454C106BD20F7 /* LogsWindow.swift */; };
+		4C32C005C69D1B9ACD629725 /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA376315092EB35B6A750B64 /* MenuBarView.swift */; };
+		556694D3BD9D40DD0C6273DB /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7657C8B2C7BAA07C12D1AF3E /* main.swift */; };
+		5C2CA3B1FCDC903A94929D7D /* HelperService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E584136A94CF8F5C3629E9F7 /* HelperService.swift */; };
+		6970D396BC0676D46C3DCCCE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7544CE27E474233016EF8250 /* HomeView.swift */; };
+		711A8D1838EE41ACC942B2BC /* NekoLinkApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7C3E5F0F859F97BAC09E99E4 /* NekoLinkApp.swift */; };
+		7181B3E2B4EE813EEC3EF644 /* DockIconCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 740B441F8704CFA1776831FA /* DockIconCoordinator.swift */; };
+		73BF5BE42AA02D09BC8CAE67 /* TrafficChart.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38DD30A669FBDBE25689835E /* TrafficChart.swift */; };
+		76F39F21564469B4A1F6F39E /* ConnectionMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F62DA08C8368EADB7753E94F /* ConnectionMonitor.swift */; };
+		784DEA2D260304C0D23612B5 /* LogStream.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179FB55BCF83215569F4CD95 /* LogStream.swift */; };
+		86CBC4E53742F56473FCCF2D /* MihomoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF4BA7F6DF6D2D45D1C1DB5 /* MihomoAPI.swift */; };
+		8CA6AF194B47BC0C9FC87333 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B903616C19B581FC79255A0F /* Assets.xcassets */; };
+		9746DF0A5FF59DEC0FADF57B /* CoreManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9463FA41D84D8A9178E1F0B7 /* CoreManager.swift */; };
+		9C96C62DB117BC3B7AC957B8 /* ConnectionsWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A03BEE17909A63B0D3EE8E6 /* ConnectionsWindow.swift */; };
+		9DF18572812ADA3041E89BA1 /* HelperInstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAD511128A27D4B9473F99ED /* HelperInstaller.swift */; };
+		A22830673AF9D3B4B699FBEE /* UpdaterService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC7A17CC0400D378FD55D17A /* UpdaterService.swift */; };
+		ABA57A88B25E580486853506 /* SystemProxyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E942A0B3C1DCD34E051F5017 /* SystemProxyService.swift */; };
+		AEFBACC5E40C362B2A9769F3 /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B049AC31E00F54B1F3ACFB1E /* AppModel.swift */; };
+		D546F0CBCB42C0CBA44B6362 /* AppearanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 391AAEC7BCEC1BC7F310F5C0 /* AppearanceService.swift */; };
+		DA58CB5E3B759A1E9AE709DD /* MainWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854FA477191CE6988069F643 /* MainWindow.swift */; };
+		DE24CB06782721CC31B948DE /* neko-link-logo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 0364F6B13D67D4C51EF6FCB4 /* neko-link-logo.jpeg */; };
+			2e0a27da9eb2469fa23e4349a5ed82c4 /* NekoLinkHelper in CopyFiles */ = {isa = PBXBuildFile; fileRef = 003CC9C8E86FEF4672D9562D /* NekoLinkHelper */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+			4fb7bbc9463f4e80bc40610cc1df9ba1 /* mihomo in Resources */ = {isa = PBXBuildFile; fileRef = 6619e2d9b73445e3a1709a11fba46833 /* mihomo */; };
+		DF01AD2BE693B482C6F9DD73 /* Helper.plist in Resources */ = {isa = PBXBuildFile; fileRef = 56C8F5ECCDE75CD9862FAF97 /* Helper.plist */; };
+		EA05C78B1511112A38B946B0 /* LaunchAtLoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B458513B6BEE391E870153F4 /* LaunchAtLoginService.swift */; };
+		EA1EE7EAD2D3AA273BE1C731 /* SubscriptionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A66C9D92B4A996CAC1BE899 /* SubscriptionService.swift */; };
+		FB23C0A8C20E831181A1AD81 /* Sparkle in Frameworks */ = {isa = PBXBuildFile; productRef = AEA1A9CAF0AA2EB331B0584C /* Sparkle */; };
+		FEB5B3DC38581BC9CB4206F0 /* ErrorToast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1152FE65B1F3809C22B2B988 /* ErrorToast.swift */; };
+		FEBBDDD7010A1D6DEC01ADE9 /* Yams in Frameworks */ = {isa = PBXBuildFile; productRef = 43F5CE9F0834E9368CDAB23D /* Yams */; };
+		FF8E130B3E206FE5C9BD0E47 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D9DE3391CD4529CF99990A7 /* Subscription.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		949B714C43FBA708CC9D3752 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7E4F0EAE9B31F8A31E956A84 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9D7E127C110F5EFC084A4D44;
+			remoteInfo = NekoLinkHelper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB12CD34EF5678901234567890ABCDEF /* TunnelManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TunnelManager.swift; sourceTree = "<group>"; };
+		FEDCBA9876543210FEDCBA9876543210 /* MenuBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarManager.swift; sourceTree = "<group>"; };
+		003CC9C8E86FEF4672D9562D /* NekoLinkHelper */ = {isa = PBXFileReference; includeInIndex = 0; path = NekoLinkHelper; sourceTree = BUILT_PRODUCTS_DIR; };
+		0364F6B13D67D4C51EF6FCB4 /* neko-link-logo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neko-link-logo.jpeg"; sourceTree = "<group>"; };
+		0A03BEE17909A63B0D3EE8E6 /* ConnectionsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionsWindow.swift; sourceTree = "<group>"; };
+		1152FE65B1F3809C22B2B988 /* ErrorToast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorToast.swift; sourceTree = "<group>"; };
+		1328936FB46227C479EC3CEA /* NekoLink.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NekoLink.entitlements; sourceTree = "<group>"; };
+		179FB55BCF83215569F4CD95 /* LogStream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogStream.swift; sourceTree = "<group>"; };
+		1A66C9D92B4A996CAC1BE899 /* SubscriptionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionService.swift; sourceTree = "<group>"; };
+		38DD30A669FBDBE25689835E /* TrafficChart.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficChart.swift; sourceTree = "<group>"; };
+		391AAEC7BCEC1BC7F310F5C0 /* AppearanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearanceService.swift; sourceTree = "<group>"; };
+		3BF4BA7F6DF6D2D45D1C1DB5 /* MihomoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MihomoAPI.swift; sourceTree = "<group>"; };
+		431A4720DBC9B89735F58171 /* SubscriptionsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionsWindow.swift; sourceTree = "<group>"; };
+		568E63FD06430E4483C3DA62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		56C8F5ECCDE75CD9862FAF97 /* Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Helper.plist; sourceTree = "<group>"; };
+		6619e2d9b73445e3a1709a11fba46833 /* mihomo */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = mihomo; sourceTree = "<group>"; };
+		683727808B5F7183F88765A8 /* HelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperProtocol.swift; sourceTree = "<group>"; };
+		6D9DE3391CD4529CF99990A7 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		740B441F8704CFA1776831FA /* DockIconCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DockIconCoordinator.swift; sourceTree = "<group>"; };
+		7544CE27E474233016EF8250 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		7657C8B2C7BAA07C12D1AF3E /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		7C3E5F0F859F97BAC09E99E4 /* NekoLinkApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NekoLinkApp.swift; sourceTree = "<group>"; };
+		854FA477191CE6988069F643 /* MainWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindow.swift; sourceTree = "<group>"; };
+		8B760A7E38F454C106BD20F7 /* LogsWindow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogsWindow.swift; sourceTree = "<group>"; };
+		9463FA41D84D8A9178E1F0B7 /* CoreManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreManager.swift; sourceTree = "<group>"; };
+		A8036BEDD5D757B4EB3D14A5 /* NekoLink.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NekoLink.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B049AC31E00F54B1F3ACFB1E /* AppModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModel.swift; sourceTree = "<group>"; };
+		B458513B6BEE391E870153F4 /* LaunchAtLoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchAtLoginService.swift; sourceTree = "<group>"; };
+		B903616C19B581FC79255A0F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA376315092EB35B6A750B64 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		CC7A17CC0400D378FD55D17A /* UpdaterService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdaterService.swift; sourceTree = "<group>"; };
+		E584136A94CF8F5C3629E9F7 /* HelperService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperService.swift; sourceTree = "<group>"; };
+		E942A0B3C1DCD34E051F5017 /* SystemProxyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemProxyService.swift; sourceTree = "<group>"; };
+		EEBC3829570E6AFDBBADFAB4 /* TrafficMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrafficMonitor.swift; sourceTree = "<group>"; };
+		F62DA08C8368EADB7753E94F /* ConnectionMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionMonitor.swift; sourceTree = "<group>"; };
+		FAD511128A27D4B9473F99ED /* HelperInstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HelperInstaller.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FDB3F3E197AB59701897E0DB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FEBBDDD7010A1D6DEC01ADE9 /* Yams in Frameworks */,
+				FB23C0A8C20E831181A1AD81 /* Sparkle in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0FD71CD88F477F3E09552684 /* Update */ = {
+			isa = PBXGroup;
+			children = (
+				CC7A17CC0400D378FD55D17A /* UpdaterService.swift */,
+			);
+			path = Update;
+			sourceTree = "<group>";
+		};
+		115817C10232624340BEDA63 /* NekoLink */ = {
+			isa = PBXGroup;
+			children = (
+				373F5EFA87BF465E8F17BB6D /* App */,
+				E4D20F8FC51AF3C696C6141F /* Core */,
+				38EAF3503862B4C7BB16DEFD /* Features */,
+				E8AD56B2636A1F0B6C59E77F /* Resources */,
+				4EA8EBD62179BD0153B79ED1 /* UI */,
+				568E63FD06430E4483C3DA62 /* Info.plist */,
+				1328936FB46227C479EC3CEA /* NekoLink.entitlements */,
+			);
+			path = NekoLink;
+			sourceTree = "<group>";
+		};
+		1B73AAC7EE39C2FFD22F5C30 /* Connections */ = {
+			isa = PBXGroup;
+			children = (
+				0A03BEE17909A63B0D3EE8E6 /* ConnectionsWindow.swift */,
+			);
+			path = Connections;
+			sourceTree = "<group>";
+		};
+		373F5EFA87BF465E8F17BB6D /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B049AC31E00F54B1F3ACFB1E /* AppModel.swift */,
+				740B441F8704CFA1776831FA /* DockIconCoordinator.swift */,
+				7C3E5F0F859F97BAC09E99E4 /* NekoLinkApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		38EAF3503862B4C7BB16DEFD /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				1B73AAC7EE39C2FFD22F5C30 /* Connections */,
+				CF3B613E5A91A5CA452B66F8 /* Home */,
+				EB391123C48464FD4F6F948E /* Logs */,
+				9A8443A9D1353270006A4718 /* MainWindow */,
+				72114F23373BBAC62EDB05E6 /* MenuBar */,
+				DD97BEAC3565EF77B4C9E5AB /* Subscriptions */,
+				8B7901C32B68B4F2675B2872 /* Traffic */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		4EA8EBD62179BD0153B79ED1 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1152FE65B1F3809C22B2B988 /* ErrorToast.swift */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		63FF5E8568B698C052122287 /* LaunchAtLogin */ = {
+			isa = PBXGroup;
+			children = (
+				B458513B6BEE391E870153F4 /* LaunchAtLoginService.swift */,
+			);
+			path = LaunchAtLogin;
+			sourceTree = "<group>";
+		};
+		72114F23373BBAC62EDB05E6 /* MenuBar */ = {
+			isa = PBXGroup;
+			children = (
+				CA376315092EB35B6A750B64 /* MenuBarView.swift */,
+			);
+			path = MenuBar;
+			sourceTree = "<group>";
+		};
+		729EF595DE4AFB118A000EEF /* SystemProxy */ = {
+			isa = PBXGroup;
+			children = (
+				FAD511128A27D4B9473F99ED /* HelperInstaller.swift */,
+				E942A0B3C1DCD34E051F5017 /* SystemProxyService.swift */,
+			);
+			path = SystemProxy;
+			sourceTree = "<group>";
+		};
+		751B2439D1E8E27124198AF6 /* NekoLinkHelper */ = {
+			isa = PBXGroup;
+			children = (
+				56C8F5ECCDE75CD9862FAF97 /* Helper.plist */,
+				E584136A94CF8F5C3629E9F7 /* HelperService.swift */,
+				7657C8B2C7BAA07C12D1AF3E /* main.swift */,
+			);
+			path = NekoLinkHelper;
+			sourceTree = "<group>";
+		};
+		82FCBD09A9FF439315E4998E /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				6D9DE3391CD4529CF99990A7 /* Subscription.swift */,
+				1A66C9D92B4A996CAC1BE899 /* SubscriptionService.swift */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		8B7901C32B68B4F2675B2872 /* Traffic */ = {
+			isa = PBXGroup;
+			children = (
+				38DD30A669FBDBE25689835E /* TrafficChart.swift */,
+			);
+			path = Traffic;
+			sourceTree = "<group>";
+		};
+		9A8443A9D1353270006A4718 /* MainWindow */ = {
+			isa = PBXGroup;
+			children = (
+				854FA477191CE6988069F643 /* MainWindow.swift */,
+			);
+			path = MainWindow;
+			sourceTree = "<group>";
+		};
+		A0E197FB9C9AB4B585518B01 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				683727808B5F7183F88765A8 /* HelperProtocol.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		A1E22DF72FC99044FB2EE84C /* Mihomo */ = {
+			isa = PBXGroup;
+			children = (
+				F62DA08C8368EADB7753E94F /* ConnectionMonitor.swift */,
+				179FB55BCF83215569F4CD95 /* LogStream.swift */,
+				3BF4BA7F6DF6D2D45D1C1DB5 /* MihomoAPI.swift */,
+				EEBC3829570E6AFDBBADFAB4 /* TrafficMonitor.swift */,
+			);
+			path = Mihomo;
+			sourceTree = "<group>";
+		};
+		B6A1AC216721454AA18E2A61 = {
+			isa = PBXGroup;
+			children = (
+				115817C10232624340BEDA63 /* NekoLink */,
+				751B2439D1E8E27124198AF6 /* NekoLinkHelper */,
+				A0E197FB9C9AB4B585518B01 /* Shared */,
+				FD7C15349A40F40F2C2A832F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B701841ED74E8AE2E5BB9921 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				391AAEC7BCEC1BC7F310F5C0 /* AppearanceService.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		CF3B613E5A91A5CA452B66F8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				7544CE27E474233016EF8250 /* HomeView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DD97BEAC3565EF77B4C9E5AB /* Subscriptions */ = {
+			isa = PBXGroup;
+			children = (
+				431A4720DBC9B89735F58171 /* SubscriptionsWindow.swift */,
+			);
+			path = Subscriptions;
+			sourceTree = "<group>";
+		};
+		E4D20F8FC51AF3C696C6141F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				B701841ED74E8AE2E5BB9921 /* Appearance */,
+				63FF5E8568B698C052122287 /* LaunchAtLogin */,
+				A1E22DF72FC99044FB2EE84C /* Mihomo */,
+				82FCBD09A9FF439315E4998E /* Subscription */,
+				729EF595DE4AFB118A000EEF /* SystemProxy */,
+				EF56AB78CD90123456789012ABCDEF34 /* Tunnel */,
+				0FD71CD88F477F3E09552684 /* Update */,
+				9463FA41D84D8A9178E1F0B7 /* CoreManager.swift */,
+				FEDCBA9876543210FEDCBA9876543210 /* MenuBarManager.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		E8AD56B2636A1F0B6C59E77F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B903616C19B581FC79255A0F /* Assets.xcassets */,
+				0364F6B13D67D4C51EF6FCB4 /* neko-link-logo.jpeg */,
+				6619e2d9b73445e3a1709a11fba46833 /* mihomo */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		EB391123C48464FD4F6F948E /* Logs */ = {
+			isa = PBXGroup;
+			children = (
+				8B760A7E38F454C106BD20F7 /* LogsWindow.swift */,
+			);
+			path = Logs;
+			sourceTree = "<group>";
+		};
+		EF56AB78CD90123456789012ABCDEF34 /* Tunnel */ = {
+			isa = PBXGroup;
+			children = (
+				AB12CD34EF5678901234567890ABCDEF /* TunnelManager.swift */,
+			);
+			path = Tunnel;
+			sourceTree = "<group>";
+		};
+		FD7C15349A40F40F2C2A832F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A8036BEDD5D757B4EB3D14A5 /* NekoLink.app */,
+				003CC9C8E86FEF4672D9562D /* NekoLinkHelper */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8027A3C474B977B5B83C7F9F /* NekoLink */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 40BD32066C6A273C157C0C7F /* Build configuration list for PBXNativeTarget "NekoLink" */;
+			buildPhases = (
+					6726F7A263B2B1FF5BB09D0C /* Sources */,
+					221666314217AB71E1B2FC19 /* Resources */,
+					FDB3F3E197AB59701897E0DB /* Frameworks */,
+					1e11e1adebd7409abb17259f17b6f74b /* CopyFiles */,
+				);
+			buildRules = (
+			);
+			dependencies = (
+				02C1A13228D4DFB1215CC48C /* PBXTargetDependency */,
+			);
+			name = NekoLink;
+			packageProductDependencies = (
+				43F5CE9F0834E9368CDAB23D /* Yams */,
+				AEA1A9CAF0AA2EB331B0584C /* Sparkle */,
+			);
+			productName = NekoLink;
+			productReference = A8036BEDD5D757B4EB3D14A5 /* NekoLink.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9D7E127C110F5EFC084A4D44 /* NekoLinkHelper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C3C8B1E6C0A23C3C32C1F155 /* Build configuration list for PBXNativeTarget "NekoLinkHelper" */;
+			buildPhases = (
+				386ADBE047DDFA18E1F6EB32 /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NekoLinkHelper;
+			packageProductDependencies = (
+			);
+			productName = NekoLinkHelper;
+			productReference = 003CC9C8E86FEF4672D9562D /* NekoLinkHelper */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7E4F0EAE9B31F8A31E956A84 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					8027A3C474B977B5B83C7F9F = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+					9D7E127C110F5EFC084A4D44 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 2BD81092D95F0408BA806AB5 /* Build configuration list for PBXProject "NekoLink" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B6A1AC216721454AA18E2A61;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AB124597A070DA487D05B34C /* XCRemoteSwiftPackageReference "Sparkle" */,
+				B66075CDAEBBF8BBCB51A9BF /* XCRemoteSwiftPackageReference "Yams" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = FD7C15349A40F40F2C2A832F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8027A3C474B977B5B83C7F9F /* NekoLink */,
+				9D7E127C110F5EFC084A4D44 /* NekoLinkHelper */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		221666314217AB71E1B2FC19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8CA6AF194B47BC0C9FC87333 /* Assets.xcassets in Resources */,
+				DF01AD2BE693B482C6F9DD73 /* Helper.plist in Resources */,
+				DE24CB06782721CC31B948DE /* neko-link-logo.jpeg in Resources */,
+				4fb7bbc9463f4e80bc40610cc1df9ba1 /* mihomo in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+			1e11e1adebd7409abb17259f17b6f74b /* CopyFiles */ = {
+				isa = PBXCopyFilesBuildPhase;
+				buildActionMask = 2147483647;
+				dstPath = "";
+				dstSubfolderSpec = 7;
+				files = (
+					2e0a27da9eb2469fa23e4349a5ed82c4 /* NekoLinkHelper in CopyFiles */,
+				);
+				name = CopyFiles;
+				runOnlyForDeploymentPostprocessing = 0;
+			};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		386ADBE047DDFA18E1F6EB32 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0B6CBA7AB6FAFB5FFAC48830 /* HelperProtocol.swift in Sources */,
+				5C2CA3B1FCDC903A94929D7D /* HelperService.swift in Sources */,
+				556694D3BD9D40DD0C6273DB /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6726F7A263B2B1FF5BB09D0C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFBACC5E40C362B2A9769F3 /* AppModel.swift in Sources */,
+				D546F0CBCB42C0CBA44B6362 /* AppearanceService.swift in Sources */,
+				76F39F21564469B4A1F6F39E /* ConnectionMonitor.swift in Sources */,
+				9C96C62DB117BC3B7AC957B8 /* ConnectionsWindow.swift in Sources */,
+				9746DF0A5FF59DEC0FADF57B /* CoreManager.swift in Sources */,
+				7181B3E2B4EE813EEC3EF644 /* DockIconCoordinator.swift in Sources */,
+				FEB5B3DC38581BC9CB4206F0 /* ErrorToast.swift in Sources */,
+				9DF18572812ADA3041E89BA1 /* HelperInstaller.swift in Sources */,
+				0CE4DBA31363C881BD62E17E /* HelperProtocol.swift in Sources */,
+				6970D396BC0676D46C3DCCCE /* HomeView.swift in Sources */,
+				EA05C78B1511112A38B946B0 /* LaunchAtLoginService.swift in Sources */,
+				784DEA2D260304C0D23612B5 /* LogStream.swift in Sources */,
+				230F872AA8CFA786764165C4 /* LogsWindow.swift in Sources */,
+				DA58CB5E3B759A1E9AE709DD /* MainWindow.swift in Sources */,
+				DEADBEEF1234567890ABCDEF12345678 /* MenuBarManager.swift in Sources */,
+				4C32C005C69D1B9ACD629725 /* MenuBarView.swift in Sources */,
+				86CBC4E53742F56473FCCF2D /* MihomoAPI.swift in Sources */,
+				711A8D1838EE41ACC942B2BC /* NekoLinkApp.swift in Sources */,
+				FF8E130B3E206FE5C9BD0E47 /* Subscription.swift in Sources */,
+				EA1EE7EAD2D3AA273BE1C731 /* SubscriptionService.swift in Sources */,
+				0B25702253608B5F57BFC6F1 /* SubscriptionsWindow.swift in Sources */,
+				ABA57A88B25E580486853506 /* SystemProxyService.swift in Sources */,
+				CD34EF56AB78901234567890ABCDEF12 /* TunnelManager.swift in Sources */,
+				73BF5BE42AA02D09BC8CAE67 /* TrafficChart.swift in Sources */,
+				1CC9196609E8C1E2276CE9E1 /* TrafficMonitor.swift in Sources */,
+				A22830673AF9D3B4B699FBEE /* UpdaterService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		02C1A13228D4DFB1215CC48C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9D7E127C110F5EFC084A4D44 /* NekoLinkHelper */;
+			targetProxy = 949B714C43FBA708CC9D3752 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		02ABFAA45BB93FC4D316429F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NekoLink/NekoLink.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NekoLink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.nekolink.NekoLink;
+				PRODUCT_NAME = NekoLink;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1D98EF78B4D354FEF99D9F01 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.nekolink.NekoLink.helper;
+				PRODUCT_NAME = NekoLinkHelper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		22C7BE6EEFC5EB3D8C426250 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.nekolink.NekoLink.helper;
+				PRODUCT_NAME = NekoLinkHelper;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		6F8A55A18F70D379694A099F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		888173F85BF84B24E39CE2DE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = NekoLink/NekoLink.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = NekoLink/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = app.nekolink.NekoLink;
+				PRODUCT_NAME = NekoLink;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		C6DAD5DE42227E52486AC6C9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2BD81092D95F0408BA806AB5 /* Build configuration list for PBXProject "NekoLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C6DAD5DE42227E52486AC6C9 /* Debug */,
+				6F8A55A18F70D379694A099F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		40BD32066C6A273C157C0C7F /* Build configuration list for PBXNativeTarget "NekoLink" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				02ABFAA45BB93FC4D316429F /* Debug */,
+				888173F85BF84B24E39CE2DE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		C3C8B1E6C0A23C3C32C1F155 /* Build configuration list for PBXNativeTarget "NekoLinkHelper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				22C7BE6EEFC5EB3D8C426250 /* Debug */,
+				1D98EF78B4D354FEF99D9F01 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AB124597A070DA487D05B34C /* XCRemoteSwiftPackageReference "Sparkle" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/sparkle-project/Sparkle.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.6.0;
+			};
+		};
+		B66075CDAEBBF8BBCB51A9BF /* XCRemoteSwiftPackageReference "Yams" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jpsim/Yams.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		43F5CE9F0834E9368CDAB23D /* Yams */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B66075CDAEBBF8BBCB51A9BF /* XCRemoteSwiftPackageReference "Yams" */;
+			productName = Yams;
+		};
+		AEA1A9CAF0AA2EB331B0584C /* Sparkle */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AB124597A070DA487D05B34C /* XCRemoteSwiftPackageReference "Sparkle" */;
+			productName = Sparkle;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 7E4F0EAE9B31F8A31E956A84 /* Project object */;
+}
