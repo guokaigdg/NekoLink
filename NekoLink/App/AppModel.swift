@@ -46,9 +46,9 @@ final class AppModel {
             traffic.stop()
             logs.stop()
             connections.stop()
-            // 关闭 core 时一并关闭系统代理，防止网络中断
-            if systemProxy.isEnabled { await systemProxy.disable() }
+            // 先停内核，保证按钮即时响应；再清理系统代理
             await core.stop()
+            if systemProxy.isEnabled { await systemProxy.disable() }
         } else {
             do {
                 try await core.start()

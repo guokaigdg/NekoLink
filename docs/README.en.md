@@ -22,7 +22,7 @@
 </p>
 
 <div align="center">
-  <img src="./img/screenshot.png" width="600" />
+  <img src="./img/screenshot.png" alt="NekoLink screenshot" width="600" />
 </div>
 
 

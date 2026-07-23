@@ -60,12 +60,18 @@ struct MainWindow: View {
 
     // MARK: - Sidebar
 
+    /// 缓存 logo 图片，避免切换菜单时重复加载导致闪动
+    private static let logoImage: NSImage? = {
+        guard let imgURL = Bundle.main.url(forResource: "neko-link-logo", withExtension: "jpeg"),
+              let img = NSImage(contentsOf: imgURL) else { return nil }
+        return img
+    }()
+
     private var sidebar: some View {
         VStack(alignment: .leading, spacing: 0) {
             // Header
             HStack(spacing: 10) {
-                if let imgURL = Bundle.main.url(forResource: "neko-link-logo", withExtension: "jpeg"),
-                   let img = NSImage(contentsOf: imgURL) {
+                if let img = Self.logoImage {
                     Image(nsImage: img)
                         .resizable()
                         .aspectRatio(contentMode: .fill)
@@ -124,16 +130,22 @@ struct MainWindow: View {
                 selectedItem = item
             }
         } label: {
-            Label(item.rawValue, systemImage: item.icon)
-                .font(.system(size: 16, weight: isSelected ? .semibold : .regular))
-                .frame(maxWidth: .infinity, alignment: .leading)
-                .padding(.horizontal, 14)
-                .padding(.vertical, 16)
-                .background(
-                    RoundedRectangle(cornerRadius: 12, style: .continuous)
-                        .fill(isSelected ? Color.accentColor.opacity(0.12) : Color.clear)
-                )
-                .contentShape(Rectangle())
+            Label {
+                Text(item.rawValue)
+                    .font(.system(size: 16, weight: isSelected ? .semibold : .regular))
+            } icon: {
+                Image(systemName: item.icon)
+                    .font(.system(size: 16))
+                    .frame(width: 22)
+            }
+            .frame(maxWidth: .infinity, alignment: .leading)
+            .padding(.horizontal, 14)
+            .padding(.vertical, 16)
+            .background(
+                RoundedRectangle(cornerRadius: 12, style: .continuous)
+                    .fill(isSelected ? Color.accentColor.opacity(0.12) : Color.clear)
+            )
+            .contentShape(Rectangle())
         }
         .buttonStyle(.plain)
     }
@@ -220,11 +232,14 @@ struct SettingsView: View {
                     Label("外观", systemImage: "circle.lefthalf.filled")
                 }
                 .pickerStyle(.segmented)
+                .controlSize(.large)
+                .font(.body.weight(.medium))
 
                 Toggle("开机自动启动", isOn: Binding(
                     get: { model.launchAtLogin.isEnabled },
                     set: { model.launchAtLogin.setEnabled($0) }
                 ))
+                .controlSize(.regular)
                 if model.launchAtLogin.requiresApproval {
                     Button("在系统设置中批准…") {
                         model.launchAtLogin.openSystemSettings()
@@ -274,6 +289,7 @@ struct SettingsView: View {
                     get: { model.updater.automaticallyChecksForUpdates },
                     set: { model.updater.automaticallyChecksForUpdates = $0 }
                 ))
+                .controlSize(.regular)
                 LabeledContent {
                     Button("立即检查…") {
                         model.updater.checkForUpdates()
@@ -293,6 +309,7 @@ struct SettingsView: View {
                     get: { model.tunnel.isEnabled },
                     set: { _ in Task { await model.tunnel.toggle() } }
                 ))
+                .controlSize(.regular)
                 if model.tunnel.isEnabled {
                     LabeledContent {
                         Text(tunnelStatusText(model.tunnel.status))

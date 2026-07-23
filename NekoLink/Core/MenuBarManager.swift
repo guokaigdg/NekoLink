@@ -14,7 +14,7 @@ final class MenuBarManager {
     func start(with model: AppModel) {
         appModel = model
 
-        let item = NSStatusBar.system.statusItem(withLength: NSStatusItem.variableLength)
+        let item = NSStatusBar.system.statusItem(withLength: 24)
         item.button?.image = Self.makeNLetterImage()
         item.button?.action = #selector(togglePopover)
         item.button?.target = self

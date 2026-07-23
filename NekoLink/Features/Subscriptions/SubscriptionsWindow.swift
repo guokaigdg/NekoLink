@@ -394,7 +394,7 @@ private struct SubscriptionDetail: View {
     }
 
     private var actionButtons: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 16) {
             Button {
                 Task {
                     refreshing = true
@@ -403,20 +403,42 @@ private struct SubscriptionDetail: View {
                 }
             } label: {
                 Label("刷新", systemImage: "arrow.clockwise.circle.fill")
+                    .font(.body.weight(.semibold))
                     .symbolEffect(.pulse, isActive: refreshing)
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(
+                        LinearGradient(
+                            colors: [Color.blue, Color.cyan],
+                            startPoint: .leading, endPoint: .trailing
+                        )
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             }
             .disabled(refreshing)
-            .buttonStyle(.borderedProminent)
+            .buttonStyle(.plain)
 
             Button {
                 Task { await model.activateSubscription(subscription.id) }
             } label: {
                 Label("激活", systemImage: "bolt.circle.fill")
+                    .font(.body.weight(.semibold))
                     .symbolEffect(.pulse, isActive: true)
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(
+                        LinearGradient(
+                            colors: [Color.accentColor, Color.accentColor.opacity(0.7)],
+                            startPoint: .leading, endPoint: .trailing
+                        )
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             }
             .disabled(model.subscriptions.activeID == subscription.id)
             .keyboardShortcut(.return)
-            .buttonStyle(.bordered)
+            .buttonStyle(.plain)
 
             Spacer()
 
@@ -424,8 +446,19 @@ private struct SubscriptionDetail: View {
                 model.subscriptions.remove(subscription.id)
             } label: {
                 Label("删除", systemImage: "trash.circle.fill")
+                    .font(.body.weight(.semibold))
+                    .foregroundStyle(.white)
+                    .padding(.horizontal, 20)
+                    .padding(.vertical, 10)
+                    .background(
+                        LinearGradient(
+                            colors: [Color.red.opacity(0.8), Color.red.opacity(0.6)],
+                            startPoint: .leading, endPoint: .trailing
+                        )
+                    )
+                    .clipShape(RoundedRectangle(cornerRadius: 10, style: .continuous))
             }
-            .buttonStyle(.bordered)
+            .buttonStyle(.plain)
         }
     }
 
